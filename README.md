@@ -54,6 +54,8 @@ The logistic regression model has been trained and evaluated on the test set. He
 3. **F1-Score**: The harmonic mean of precision and recall, providing a single measure of a model's performance.
 4. **Support**: The number of actual occurrences of each class in the test set.
 
+<img src="images/1.png" alt="My Image" width="700"/>
+
 #### Classification Report:
 - **Precision**: 
   - Class 0 (Low Price): 0.93

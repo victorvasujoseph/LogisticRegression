@@ -49,21 +49,63 @@ The logistic regression model has been trained and evaluated on the test set. He
 
 #### Classification Report:
 - **Precision**: 
-  - Class 0 (Low Price): 0.89
-  - Class 1 (High Price): 0.69
+  - Class 0 (Low Price): 0.93
+  - Class 1 (High Price): 0.71
 - **Recall**:
-  - Class 0 (Low Price): 0.71
-  - Class 1 (High Price): 0.89
+  - Class 0 (Low Price): 0.72
+  - Class 1 (High Price): 0.92
 - **F1-Score**:
-  - Class 0 (Low Price): 0.79
-  - Class 1 (High Price): 0.78
-- **Overall Accuracy**: 0.78
+  - Class 0 (Low Price): 0.81
+  - Class 1 (High Price): 0.80
+- **Overall Accuracy**: 0.81
 
 #### Confusion Matrix:
-- True Positives (High Price correctly identified): 47
-- True Negatives (Low Price correctly identified): 51
-- False Positives (Low Price incorrectly identified as High Price): 21
-- False Negatives (High Price incorrectly identified as Low Price): 6
+- True Positives (High Price correctly identified): 49
+- True Negatives (Low Price correctly identified): 52
+- False Positives (Low Price incorrectly identified as High Price): 20
+- False Negatives (High Price incorrectly identified as Low Price): 4
+
+
+### Metrics Overview:
+1. **Precision**: The ratio of true positive predictions to the total number of positive predictions (both true positives and false positives).
+2. **Recall**: The ratio of true positive predictions to the total number of actual positives (true positives and false negatives).
+3. **F1-Score**: The harmonic mean of precision and recall, providing a single measure of a model's performance.
+4. **Support**: The number of actual occurrences of each class in the test set.
+
+### Detailed Interpretation:
+
+1. **Class 0 (Low Price)**:
+   - **Precision**: 0.93
+     - 93% of the properties predicted to be in the Low Price category were correctly classified.
+   - **Recall**: 0.72
+     - 72% of the actual Low Price properties were correctly identified.
+   - **F1-Score**: 0.81
+     - This score balances precision and recall, showing good overall performance for this class.
+
+2. **Class 1 (High Price)**:
+   - **Precision**: 0.71
+     - 71% of the properties predicted to be in the High Price category were correctly classified.
+   - **Recall**: 0.92
+     - 92% of the actual High Price properties were correctly identified.
+   - **F1-Score**: 0.80
+     - This indicates a strong performance, especially in identifying High Price properties correctly.
+
+3. **Overall Accuracy**: 0.81
+   - The model correctly classified 81% of the total properties.
+
+4. **Macro Avg and Weighted Avg**:
+   - **Macro Avg**: Averages precision, recall, and F1-score across classes, giving equal weight to each class.
+   - **Weighted Avg**: Averages these metrics, weighted by the number of instances in each class, providing an overall performance measure that takes class imbalance into account.
+
+### Business Implications:
+
+- **High Precision for Low Price**: A high precision in the Low Price category suggests that the model is conservative in predicting Low Price properties, meaning it makes fewer mistakes in overestimating a property's value.
+- **High Recall for High Price**: The high recall in the High Price category indicates that the model is good at identifying most of the properties that are truly high-priced, which is valuable for targeting high-value investments or marketing efforts.
+- **Overall Performance**: The balanced F1-scores and overall accuracy show that the model is fairly reliable for this classification task, providing useful insights for decision-making in real estate investments and pricing strategies.
+
+These results suggest that the logistic regression model, with the preprocessing steps included in the pipeline, provides a robust tool for predicting property price categories based on the available features.
+
+
 
 ### Insights and Business Decision Support
 

@@ -47,6 +47,13 @@ Now, we'll perform logistic regression using the selected features to predict th
 
 The logistic regression model has been trained and evaluated on the test set. Here are the key metrics:
 
+
+### Metrics Overview:
+1. **Precision**: The ratio of true positive predictions to the total number of positive predictions (both true positives and false positives).
+2. **Recall**: The ratio of true positive predictions to the total number of actual positives (true positives and false negatives).
+3. **F1-Score**: The harmonic mean of precision and recall, providing a single measure of a model's performance.
+4. **Support**: The number of actual occurrences of each class in the test set.
+
 #### Classification Report:
 - **Precision**: 
   - Class 0 (Low Price): 0.93
@@ -64,13 +71,6 @@ The logistic regression model has been trained and evaluated on the test set. He
 - True Negatives (Low Price correctly identified): 52
 - False Positives (Low Price incorrectly identified as High Price): 20
 - False Negatives (High Price incorrectly identified as Low Price): 4
-
-
-### Metrics Overview:
-1. **Precision**: The ratio of true positive predictions to the total number of positive predictions (both true positives and false positives).
-2. **Recall**: The ratio of true positive predictions to the total number of actual positives (true positives and false negatives).
-3. **F1-Score**: The harmonic mean of precision and recall, providing a single measure of a model's performance.
-4. **Support**: The number of actual occurrences of each class in the test set.
 
 ### Detailed Interpretation:
 

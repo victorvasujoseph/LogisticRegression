@@ -75,4 +75,3 @@ The logistic regression model can help real estate professionals understand the 
 
 3. **Targeted Marketing**: Marketing efforts can be tailored based on the likelihood of properties being in the high or low price categories, focusing on different buyer segments accordingly.
 
-If you have any further analysis or specific areas you'd like to explore with this data, please let me know!

@@ -1,9 +1,5 @@
 
 
-It looks like you've uploaded a dataset named "RealEstate.xlsx." Let's first take a look at the dataset to understand its features, which will help in identifying a suitable classification problem and the potential business decision that could be supported using logistic regression.
-
-I'll load the dataset and give an overview of its contents.
-
 ### Dataset Overview
 
 The dataset, titled "RealEstate.xlsx," contains the following columns:
